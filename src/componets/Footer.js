@@ -1,7 +1,17 @@
 import React from 'react'
 
-export const Footer = () => {
+
+
+const Footer = () => {
+  const today = new Date();
+  const year = today.getFullYear();
   return (
-    <div>Footer</div>
-  )
-}
+    <footer>
+      <p>
+        <small>Copywrite © {year} Sahil</small>
+      </p>
+    </footer>
+  );
+};
+
+export default Footer;
